@@ -1,0 +1,64 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!--Custom css ADD HERE-->
+
+    <!-- semantic UI -->
+    <link rel="stylesheet" type='text/css'
+        href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.14/semantic.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
+    <title>Upload - {% block title %}Document{% endblock title %}</title>
+    <style>
+        header {
+                  padding: 10px;
+                    text-align: center;
+                    background: #1abc9c;
+                    color: white;
+                    font-size: 10px;
+                }
+        footer {
+                text-align: center;
+                padding: 3px;
+                background-color: DarkSalmon;
+                color: white;
+                position: fixed;  
+                bottom: 0; 
+                width: 100%; 
+                /* Height of the footer*/  
+                height: 50px; 
+        }
+        .mt-5 {
+            margin-top: 10px;
+        }
+        .mb-5 {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+{% block header %}
+<header></header>
+{% endblock header %}
+    <div class="ui container">
+        {% block content %}
+        {% endblock content %}
+    </div>
+    <footer>
+        <p>Ice Software<br>
+            <a href="mailto:hege@example.com" class="mb-5">hege@example.com</a>
+        </p><br>
+    </footer>
+</body>
+
+</html>
